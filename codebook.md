@@ -32,19 +32,19 @@ and create tiny data sets:
 
 ### Variables
 
--dataActivityTest - table contains of Y_test.txt
--dataActivityTrain - table contains of Y_train.txt
--dataSubjectTrain - table contains of subject_train.txt
--dataSubjectTrain - table contains of subject_test.txt
--dataFeaturesTest - table contains of X_test.txt
--dataFeaturesTrain - table contains of X_train.txt
--dataSubject - table contains the combination of tables dataSubjectTrain and dataSubjectTrain
--dataActivity - table contains the combination of tables dataActivityTest and dataActivityTrain
--dataFeatures - table contains the combination of tables dataFeaturesTrain and dataFeaturesTest
--dataFeaturesNames - table contains the Features names of dataFeatures
--dataCombine - table contains the combination of tables dataSubject and dataActivity
--Data - table contains the merge of tables dataCombine and dataFeatures with the respective Features names and column names
--Data2 - table contains the aggregate and the mean of subject and activity of Data
+- dataActivityTest - table contains of Y_test.txt
+- dataActivityTrain - table contains of Y_train.txt
+- dataSubjectTrain - table contains of subject_train.txt
+- dataSubjectTrain - table contains of subject_test.txt
+- dataFeaturesTest - table contains of X_test.txt
+- dataFeaturesTrain - table contains of X_train.txt
+- dataSubject - table contains the combination of tables dataSubjectTrain and dataSubjectTrain
+- dataActivity - table contains the combination of tables dataActivityTest and dataActivityTrain
+- dataFeatures - table contains the combination of tables dataFeaturesTrain and dataFeaturesTest
+- dataFeaturesNames - table contains the Features names of dataFeatures
+- dataCombine - table contains the combination of tables dataSubject and dataActivity
+- Data - table contains the merge of tables dataCombine and dataFeatures with the respective Features names and column names
+- Data2 - table contains the aggregate and the mean of subject and activity of Data
 
 
 ### Output
