@@ -82,6 +82,7 @@ names(Data)<-gsub("Acc", "Accelerometer", names(Data))
 names(Data)<-gsub("Gyro", "Gyroscope", names(Data))
 names(Data)<-gsub("Mag", "Magnitude", names(Data))
 names(Data)<-gsub("BodyBody", "Body", names(Data))
+write.table(Data, file = "tidydata.txt",row.name=FALSE)
 
 ######################################################################################################################################
 #####Part 4: Creates a second, independent tidy data set with the average of each variable for each activity and each subject.########
@@ -90,5 +91,5 @@ names(Data)<-gsub("BodyBody", "Body", names(Data))
 library(plyr);
 Data2<-aggregate(. ~subject + activity, Data, mean)
 Data2<-Data2[order(Data2$subject,Data2$activity),]
-write.table(Data2, file = "tidydata.txt",row.name=FALSE)
+write.table(Data2, file = "tidydata2.txt",row.name=FALSE)
 
